@@ -3,7 +3,7 @@ import NavBar from '../pages/NavBar.vue'
 import ProfilePage from '../pages/ProfilePage.vue'
 import AboutMe from '../pages/AboutMe.vue'
 import ExperiencePage from '../pages/ExperiencePage.vue'
-// import MyProjects from '../pages/MyProjects.vue'
+import MyProjects from '../pages/MyProjects.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,11 +33,11 @@ const router = createRouter({
           name: 'experiences',
           component: ExperiencePage,
         },
-        // {
-        //   path: '/projects',
-        //   name: 'my-projects',
-        //   component: MyProjects,
-        // }
+        {
+          path: '/projects',
+          name: 'my-projects',
+          component: MyProjects,
+        }
       ]
     },
   ]
