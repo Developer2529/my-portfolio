@@ -5,8 +5,11 @@
 // }
 
 function showMenuOpt () {
-  document.querySelector("#user-dropdown")?.classList.remove("hidden")
+  document.querySelector("#user-dropdown")?.classList.toggle("hidden")
+
 }
+
+
 
 </script>
 

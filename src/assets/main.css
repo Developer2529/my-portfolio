@@ -21,8 +21,8 @@ a,
   color: gray;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
-  text-decoration-color: #01ff01;
+  /* text-decoration-color: rgb(181, 181, 181); */
+  text-decoration-color: #ff3300;
 }
 
 .logo:hover {
@@ -37,12 +37,13 @@ a,
 
 .bg-navBar {
   background-color: #300a6f;
-  background-color: hsl(240, 100%, 25%);
+  /* background-color: hsl(240, 100%, 25%); */
 }
 
 .hamburger-bg {
-  background-color: #1f102f;
-  background-color: #0038a0;
+  /* background-color: #1f102f; */
+  /* background-color: #0038a0; */
+  background-color: #fa200c;
 }
 
 .hamburger-div ul li a {
@@ -51,7 +52,8 @@ a,
 }
 
 .hamburger-div ul li a:hover {
-  background-color: #00a000;
+  /* background-color: #00a000; */
+  background-color: #fa200c;
 }
 
 /* .hamburger-div {
@@ -138,5 +140,11 @@ a,
   .nav-first-div {
     /* justify-content: space-around; */
     padding-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 598px) {
+  #user-dropdown ul {
+    display: none;
   }
 }
