@@ -1,7 +1,7 @@
 
 <template>
     <div  id="contact" class="main-div-exp">
-     <h1 class="text-white" >My contact info</h1>
+     <h1 class="text-white" >My contact information</h1>
      <img width="200" height="200" src="../assets/img/2682803_attention_erro_exclamation_mark_warn_icon.svg" alt="">
      <div class="text-white">Esto esta en construcion</div>
     
