@@ -1,9 +1,6 @@
-<script>
-
-</script>
-
 <template>
-  <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
+  <div>
+    <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
     <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="logo self-center text-white text-2xl whitespace-nowrap dark:text-white">{{ navBartext.fullName }}</div>
       <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -116,7 +113,68 @@
       </li>
     </ul>
   </div>
-  <div  :style="{ marginTop: hamburgerDiv ? menuListProps.marginTop : '', transition: menuListProps.transition }" class="profile-main-div">
-  </div>
   <router-view></router-view>
+  </div>
 </template>
+
+<script  lang="ts">
+
+import { ref } from 'vue';
+
+// interface NavBarText {
+//   fullName: string;
+//   home: string;
+//   about: string;
+//   experience: string;
+//   projects: string;
+//   contact: string;
+//   active: string;
+// }
+
+// interface MenuListProps {
+//   divBg: string;
+//   width: string;
+//   marginTop: string;
+//   transition: string;
+// }
+
+export default {
+  setup() {
+    const navBartext = {
+      fullName: "Richard Sanchez",
+      home: "Home",
+      about: "About",
+      experience: "Experience",
+      projects: "Projects",
+      contact: "Contact",
+      active: "flex", 
+    };
+
+    const hamburgerDiv  = ref(false);
+    const menuListProps  = {
+      divBg: "#300a6f",
+      width: "100%",
+      marginTop: "11rem",
+      transition: "1.5s",
+    };
+
+    const showMenuOptBtn = (): void => {
+      hamburgerDiv.value = !hamburgerDiv.value;
+    };
+
+    return {
+      navBartext,
+      showMenuOptBtn,
+      hamburgerDiv,
+      menuListProps,
+    };
+  },
+};
+
+</script>
+
+<style scoped>
+
+</style>
+
+
