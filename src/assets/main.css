@@ -5,11 +5,12 @@
 body {
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  overflow: auto;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /*TRANSITION*/
 a,
@@ -21,8 +22,9 @@ a,
   color: gray;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  /* text-decoration-color: rgb(181, 181, 181); */
   text-decoration-color: #ff3300;
+
+
 }
 
 .logo:hover {
@@ -33,11 +35,16 @@ a,
   position: absolute;
   top: 64px;
   right: 0px;
+  width: 100%;
 }
 
 .bg-navBar {
   background-color: #300a6f;
   /* background-color: hsl(240, 100%, 25%); */
+  /* background-color: #1f102f */
+  /* background-color: #07182E */
+  background-color: #002147;
+
 }
 
 .hamburger-bg {
@@ -48,14 +55,17 @@ a,
 
 .hamburger-div ul li a {
   color: white;
-  text-align: right;
+  text-align: center;
 }
 
 .hamburger-div ul li a:hover {
   /* background-color: #00a000; */
   background-color: #fa200c;
+  transform: scale(1.2);
 }
 
-/* .hamburger-div {
-    margin-top: 2rem;
-} */
+
+.active {
+  display: flex;
+}
+
