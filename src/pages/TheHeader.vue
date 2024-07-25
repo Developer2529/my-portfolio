@@ -1,8 +1,8 @@
-<script>
 
-</script>
 
 <template>
+
+<div>
   <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
     <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <div class="logo self-center text-white text-2xl whitespace-nowrap dark:text-white">{{ navBartext.fullName }}</div>
@@ -119,4 +119,48 @@
   <div  :style="{ marginTop: hamburgerDiv ? menuListProps.marginTop : '', transition: menuListProps.transition }" class="profile-main-div">
   </div>
   <router-view></router-view>
+</div>
 </template>
+
+<script>
+
+import { ref } from 'vue';
+
+export default {
+  setup() {
+    const navBartext = ref({
+      fullName: "Richard Sanchez",
+      home: "Home",
+      about: "About",
+      experience: "Experience",
+      projects: "Projects",
+      contact: "Contact",
+      active: "flex", 
+    });
+
+    const hamburgerDiv = ref(false);
+    const menuListProps = ref({
+      divBg: "#300a6f",
+      width: "100%",
+      marginTop: "11rem",
+      transition: "1.5s",
+    });
+
+    const showMenuOptBtn = () => {
+      hamburgerDiv.value = !hamburgerDiv.value;
+    };
+
+    return {
+      navBartext,
+      showMenuOptBtn,
+      hamburgerDiv,
+      menuListProps,
+    };
+  },
+};
+
+</script>
+
+<style scoped>
+
+</style>

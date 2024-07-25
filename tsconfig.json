@@ -1,8 +1,8 @@
 {
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "allowJs": true, 
-  },
+  // "compilerOptions": {
+  //   "noImplicitAny": false,
+  //   "allowJs": true, 
+  // },
   "files": [],
   "references": [
     {
