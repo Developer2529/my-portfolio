@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import TheHeader from "@/pages/TheHeader.vue";
+import TheHeader from "../pages/TheHeader.vue";
 import ProfilePage from "../pages/ProfilePage.vue";
 // import TheNavBar from  "../pages/TheNavBar.vue";
 // import AboutMe from "../pages/AboutMe.vue";

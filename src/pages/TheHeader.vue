@@ -1,38 +1,5 @@
 <script>
-import { ref } from 'vue';
 
-export default {
-  setup() {
-    const navBartext = ref({
-      fullName: "Richard Sanchez",
-      home: "Home",
-      about: "About",
-      experience: "Experience",
-      projects: "Projects",
-      contact: "Contact",
-      active: "flex", 
-    });
-
-    const hamburgerDiv = ref(false);
-    const menuListProps = ref({
-      divBg: "#300a6f",
-      width: "100%",
-      marginTop: "11rem",
-      transition: "1.5s",
-    });
-
-    const showMenuOptBtn = () => {
-      hamburgerDiv.value = !hamburgerDiv.value;
-    };
-
-    return {
-      navBartext,
-      showMenuOptBtn,
-      hamburgerDiv,
-      menuListProps,
-    };
-  },
-};
 </script>
 
 <template>
