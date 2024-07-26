@@ -3,41 +3,94 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
 </script>
 
 <template>
-  <div class="get-to-knowme flex flex-col items-center mt-96">
-    <p id="about" class="text-white">Get to know more</p>
-    <p class="text-white font-semibold text-4xl">About Me</p>
-  </div>
-  
-  <div class="flex flex-wrap about-main-div mt-4 justify-center">
-    <div class="card">
-      <img src="../assets/img/lionCoding.png" alt="">
+  <div>
+    <div class="get-to-knowme flex flex-col items-center mt-96">
+      <p id="about" class="text-white">Get to know more</p>
+      <p class="text-white font-semibold text-4xl">About Me</p>
     </div>
 
-    <div class="flex flex-wrap about-inner-div gap-4 w-full  justify-center p-3">
-      <div class="column first flex flex-col text-center border-solid rounded-3xl border-indigo-600 w-full md:w-80 h-auto p-4">
-        <div class="flex flex-row justify-center pt-4 pb-2"><icon-quality></icon-quality></div>
-        <p class="font-semibold text-slate-300 text-xl">Experience</p>
-        <p class="font-title-col">7 months</p>
-        <p class="font-title-col">Frontend Development</p>
+    <div class="flex flex-wrap about-main-div mt-4 justify-center">
+      <div class="card">
+        <img src="../assets/img/lionCoding.png" alt="">
       </div>
 
-      <div class="column second flex flex-col text-center border-solid border-2 rounded-3xl border-indigo-600 w-full md:w-80 h-auto p-4">
-        <div class="flex flex-row justify-center pt-4 pb-2"><icon-education></icon-education></div>
-        <p class="font-semibold text-slate-300 text-xl">Education</p>
-        <p class="font-title-col">Software Developer</p>
-        <p class="font-title-col">UAPA University</p>
-      </div>
+      <div class="flex flex-wrap about-inner-div gap-4 w-full  justify-center p-12">
+        <div
+          class="column first flex flex-col text-center border-solid rounded-3xl border-indigo-600 w-full md:w-80 h-auto p-4">
+          <div class="flex flex-row justify-center pt-4 pb-2"><icon-quality></icon-quality></div>
+          <p class="font-semibold text-slate-300 text-xl">Experience</p>
+          <p class="font-title-col">7 months</p>
+          <p class="font-title-col">Frontend Development</p>
+        </div>
 
-      <div class="column third w-full ">
-        <p class="text-justify font-title-col">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in ducimus sint earum quisquam quam maiores, nesciunt sunt iste voluptatibus eius error aliquam quae eveniet facilis ullam labore dolores nisi? Consequuntur necessitatibus quos libero eum dolores nostrum. Tenetur voluptas deserunt quas, quibusdam minima.
-        </p>
+        <div
+          class="column second flex flex-col text-center border-solid border-2 rounded-3xl border-indigo-600 w-full md:w-80 h-auto p-4">
+          <div class="flex flex-row justify-center pt-4 pb-2"><icon-education></icon-education></div>
+          <p class="font-semibold text-slate-300 text-xl">Education</p>
+          <p class="font-title-col">Software Developer</p>
+          <p class="font-title-col">UAPA University</p>
+        </div>
+
+        <div class="column third w-full ">
+          <p class="text-justify font-title-col">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in ducimus sint earum quisquam quam
+            maiores, nesciunt sunt iste voluptatibus eius error aliquam quae eveniet facilis ullam labore dolores nisi?
+            Consequuntur necessitatibus quos libero eum dolores nostrum. Tenetur voluptas deserunt quas, quibusdam
+            minima.
+          </p>
+        </div>
       </div>
     </div>
+    <div class="rocket">
+      <a href="#about"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
+    </div>
+    <div class="rocket_2">
+      <a href="#home"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
+    </div>
+    <!-- <div class="rocket_3">
+      <a href="#about"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
+    </div> -->
+    
+    
+
   </div>
 </template>
 
 <style>
+
+.rocket {
+  position: fixed;
+  bottom: 400px;
+  right: 0;
+  animation: moveRocket 3s ease-in-out infinite;
+  rotate: 180deg;
+}
+
+.rocket_2 {
+  position: fixed;
+  bottom: 380px;
+  left: 0;
+  animation: moveRocket 3s ease-in-out infinite;
+
+}
+
+.rocket_3 {
+  position: fixed;
+  bottom: -10px;
+  right: 0;
+  animation: moveRocket 3s ease-in-out infinite;
+  rotate: 180deg;
+}
+
+@keyframes moveRocket {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 .about-main-div {
   background-color: #07182E;
 }
@@ -136,10 +189,10 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
     width: 100%;
   }
 
-  
+
   .column.third {
-  width: auto;
-}
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 598px) {
