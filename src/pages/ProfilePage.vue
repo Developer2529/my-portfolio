@@ -21,7 +21,7 @@ interface profileDataType {
 const profileInfo = ref<profileDataType>({
   profilePic: profilePic,
   profileGreeting: "Hello, I'm",
-  fullName: "John Doe",
+  fullName: "Richard Sanchez",
   typeOfDeveloper: ["Frontend Developer", "Backend Developer"],
   cvBtn: "Download CV",
   contactInfoBtn: "Contact Info",
