@@ -33,7 +33,7 @@ export default {
     const menuListProps: Ref<MenuListProps> = ref<MenuListProps>({
       divBg: "#300a6f",
       width: "100%",
-      marginTop: "8rem",
+      marginTop: "12rem",
       transition: "1.5s",
     });
 
