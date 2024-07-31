@@ -4,9 +4,9 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
 
 <template>
   <div>
-    <div class="get-to-knowme flex flex-col items-center mt-96">
-      <p id="about" class="text-white">Get to know more</p>
-      <p class="text-white font-semibold text-4xl">About Me</p>
+    <div class="get-to-knowme flex flex-col items-center mt-40">
+      <p id="about" class="text-white mb-4">Get to know more</p>
+      <p class="text-white font-semibold text-5xl">About Me</p>
     </div>
 
     <div class="flex flex-wrap about-main-div mt-4 justify-center">
@@ -90,6 +90,7 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
     transform: translateY(-20px);
   }
 }
+
 
 .about-main-div {
   background-color: #07182E;
@@ -177,6 +178,13 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
   box-shadow: 0px 10px 20px 2px rgba(35, 23, 193, 0.823);
 }
 
+.details-div {
+  transition: all ease 0.2s;
+  box-shadow: 0px 5px 10px 0px rgba(82, 76, 76, 0.5);
+  border-width: 1px;
+  margin-bottom: 1rem;
+}
+
 /* media queries */
 @media screen and (max-width: 768px) {
   .about-inner-div {
@@ -192,6 +200,7 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
 
   .column.third {
     width: auto;
+    margin-bottom: 15rem;
   }
 }
 

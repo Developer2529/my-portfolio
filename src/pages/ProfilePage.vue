@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 // import profilePic from '/src/assets/img/lionCoding.png'
-import profilePic from '/src/assets/img/10.svg'
+import profilePic from '/src/assets/img/profilePicModified2.svg'
 import { IconGithub, IconLinkedin } from "@/components/icons/index2"
 import AboutMe from './AboutMe.vue';
 import MyProjects from './MyProjects.vue';
@@ -81,15 +81,15 @@ const profileInfo = ref<profileDataType>({
   transform: scale(1.1);
 }
 
-.profile-img{
-border-radius: 40%;
+.profile-img {
+border-radius: 50%;
 
   
 }
 .profile-info-div {
   justify-content: center;
   margin-top: 10rem;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 /* media queries */

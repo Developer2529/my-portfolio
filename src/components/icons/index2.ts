@@ -4,6 +4,7 @@ import IconLinkedin  from "./IconLinkedin.vue";
 import IconQuality from "./IconQuality.vue";
 import IconEducation from "./IconEducation.vue";
 import DownloBtn from "./DownloBtn.vue";
+import IconCertified from "./IconCertified.vue";
 export { 
     IconGithub,
     IconLinkedin, 
@@ -11,5 +12,6 @@ export {
     IconEducation,
     IconQuality,
     DownloBtn,
+    IconCertified,
     
 }

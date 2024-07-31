@@ -21,7 +21,7 @@ interface MenuListProps {
 export default {
   setup() {
     const navBartext: Ref<NavBarText> = ref<NavBarText>({
-      fullName: "Richard Sanchez",
+      fullName: "${R1ch@rd S@nch3z}",
       home: "Home",
       about: "About",
       experience: "Experience",
@@ -33,7 +33,7 @@ export default {
     const menuListProps: Ref<MenuListProps> = ref<MenuListProps>({
       divBg: "#300a6f",
       width: "100%",
-      marginTop: "11rem",
+      marginTop: "8rem",
       transition: "1.5s",
     });
 
@@ -74,7 +74,7 @@ export default {
   <div id="home" @click="handleOutsideClick">
     <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
       <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="logo self-center text-white text-2xl whitespace-nowrap dark:text-white">{{ navBartext.fullName }}</div>
+        <div class="logo font-semibold  self-center  text-xl whitespace-nowrap dark:text-white">{{ navBartext.fullName.toUpperCase() }}</div>
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
             data-collapse-toggle="navbar-user"
@@ -190,3 +190,21 @@ export default {
     <router-view></router-view>
   </div>
 </template>
+
+<style>
+
+@media screen and (max-width: 431px) {
+  .hamburger-div ul li a {
+font-size: 1.5rem;
+
+}
+
+.hamburger-div ul li {
+margin-bottom: 1rem;
+
+}
+
+}
+
+
+    </style>
