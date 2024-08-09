@@ -40,16 +40,11 @@ a,
 
 .bg-navBar {
   background-color: #300a6f;
-  /* background-color: hsl(240, 100%, 25%); */
-  /* background-color: #1f102f */
-  /* background-color: #07182E */
   background-color: #002147;
 
 }
 
 .hamburger-bg {
-  /* background-color: #1f102f; */
-  /* background-color: #0038a0; */
   background-color: #fa200c;
 }
 
@@ -59,7 +54,6 @@ a,
 }
 
 .hamburger-div ul li a:hover {
-  /* background-color: #00a000; */
   background-color: #fa200c;
   transform: scale(1.2);
 }
@@ -71,7 +65,6 @@ a,
 
 .logo{ 
   animation: moveName 3s ease-in-out infinite;
-  /* rotate: 180deg; */
   color: #fff;
 }
 

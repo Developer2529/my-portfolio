@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 // import profilePic from '/src/assets/img/lionCoding.png'
 import profilePic from '/src/assets/img/profilePicModified2.svg'
-import { IconGithub, IconLinkedin } from "@/components/icons/index2"
+import { IconGithub, IconLinkedin, IconArrowdown } from "@/components/icons/index2"
 import AboutMe from './AboutMe.vue';
 import MyProjects from './MyProjects.vue';
 import MyContact from './MyContact.vue';
@@ -43,12 +43,6 @@ const profileInfo = ref<profileDataType>({
           <button type="button"
             class="contact-info-btn py-2.5 px-5 me-2 mb-2 mr-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"> <DownloBtn url="/src/assets/img/lionCoding.png"></DownloBtn></button>
       
-
-        <!-- <DownloBtn url="/src/assets/logo.svg">
-          <button type="button"
-            class="py-2.5 px-5 me-2 mb-2 mr-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">{{
-              profileInfo.cvBtn }}</button>
-        </DownloBtn> -->
         <a href="#contact"><button type="button"
           class=" contact-info-btn py-2.5 px-5 me-2 mb-2 ml-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white ">{{
             profileInfo.contactInfoBtn }}</button></a>
@@ -58,7 +52,9 @@ const profileInfo = ref<profileDataType>({
         <a class="social-icon" href="https://www.linkedin.com/in/richar-starling-sanchez-francis-b11502213" target="_blank"><icon-linkedin></icon-linkedin></a>
       </div>
     </div>
+   
   </div>
+  <!-- <a onclick="location.href='#about'" class="flex justify-end arrow-down pr-4"><icon-arrowdown></icon-arrowdown></a> -->
  <about-me></about-me>
  <experience-page></experience-page>
  <my-projects></my-projects>
@@ -98,6 +94,7 @@ border-radius: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+ 
   }
 
   .profile-img-div {
@@ -109,9 +106,11 @@ border-radius: 50%;
     padding-top: 0;
   }
 
-  .nav-first-div {
-    padding-left: 5rem;
+  .hamburger-list-div{
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
   }
+
 }
 
 @media screen and (min-width: 768px) {

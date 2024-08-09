@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { IconEducation, IconQuality } from "../components/icons/index2"
+import { IconEducation, IconQuality, IconArrowdown, IconArrowup } from "../components/icons/index2"
 </script>
 
 <template>
   <div>
     <div class="get-to-knowme flex flex-col items-center mt-40">
-      <p id="about" class="text-white mb-4">Get to know more</p>
+      <p id="about" class=" mb-4">Get to know more</p>
       <p class="text-white font-semibold text-5xl">About Me</p>
     </div>
 
@@ -41,48 +41,31 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
         </div>
       </div>
     </div>
-    <div class="rocket">
-      <a href="#about"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
-    </div>
-    <div class="rocket_2">
-      <a href="#home"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
-    </div>
-    <!-- <div class="rocket_3">
-      <a href="#about"><img height="60" width="60" src="../assets/img/rocket2_icon.png" alt=""></a>
-    </div> -->
-    
-    
-
   </div>
 </template>
 
 <style>
 
-.rocket {
-  position: fixed;
-  bottom: 400px;
-  right: 0;
-  animation: moveRocket 3s ease-in-out infinite;
-  rotate: 180deg;
+.arrow-down {
+  animation: moveArrow 3s ease-in-out infinite;
+
 }
 
-.rocket_2 {
+.arrow-up {
   position: fixed;
   bottom: 380px;
-  left: 0;
-  animation: moveRocket 3s ease-in-out infinite;
+  left: 10px;
+  animation: moveArrow 3s ease-in-out infinite;
+
+}
+.arrow-down-about{
+  position: absolute;
 
 }
 
-.rocket_3 {
-  position: fixed;
-  bottom: -10px;
-  right: 0;
-  animation: moveRocket 3s ease-in-out infinite;
-  rotate: 180deg;
-}
 
-@keyframes moveRocket {
+
+@keyframes moveArrow {
   0%, 100% {
     transform: translateY(0);
   }
@@ -217,6 +200,10 @@ import { IconEducation, IconQuality } from "../components/icons/index2"
 
   .get-to-knowme {
     margin-top: 4rem;
+  }
+
+  .card{
+    margin: 0;
   }
 
 

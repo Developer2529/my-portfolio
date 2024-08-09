@@ -1,0 +1,20 @@
+<script setup lang="ts">
+   const props = defineProps({
+    size: {
+        type: String,
+        default: "30"
+    },
+    color: {
+        type: String,
+        default: "#00FF44",
+    },
+    color2: {
+        type: String, 
+        default: "#00FF44"
+    }
+})
+</script>
+
+<template>
+   <svg :width="props.size" :height="props.size" enable-background="new 0 0 128 128" :fill="props.color" version="1.1" viewBox="0 0 128 128"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="OBJECT"><g><path d="M105.322,55.731L63.999,97.059L22.677,55.731c-0.78-0.781-2.047-0.781-2.828,0s-0.781,2.047,0,2.828l42.736,42.741    c0.375,0.375,0.884,0.586,1.414,0.586s1.039-0.211,1.414-0.586L108.15,58.56c0.781-0.781,0.781-2.047,0-2.828    S106.104,54.95,105.322,55.731z"/><path d="M62.585,74.974c0.375,0.375,0.884,0.586,1.414,0.586s1.039-0.211,1.414-0.586l42.737-42.741    c0.781-0.781,0.781-2.047,0-2.828s-2.047-0.781-2.828,0L63.999,70.731L22.677,29.404c-0.78-0.781-2.047-0.781-2.828,0    s-0.781,2.047,0,2.828L62.585,74.974z"/></g></g></svg>
+</template>

@@ -1,21 +1,16 @@
-
+<script setup lang="ts">
+import IconArrowdown from '@/components/icons/IconArrowdown.vue';
+</script>
 <template>
-    <div  id="contact" class="main-div-exp">
-     <h1 class="text-white" >My contact information</h1>
-     <img width="200" height="200" src="../assets/img/2682803_attention_erro_exclamation_mark_warn_icon.svg" alt="">
-     <div class="text-white">Esto esta en construcion</div>
-    
-    </div>
-   
+<div>
+    <!-- <div>
+        <p class="">Browse My Recent</p>
+        <h1 class="text-white">Projects</h1>
+    </div> -->
+</div>
 </template>
 
 <style>
 
-.main-div-exp {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
+
 </style>

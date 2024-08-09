@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { IconCertified } from '@/components/icons/index2';
+import { IconCertified, IconArrowdown } from '@/components/icons/index2';
 
 </script>
 
@@ -65,7 +65,7 @@ import { IconCertified } from '@/components/icons/index2';
                         </div>
                     </div>
                 </div>
-
+               
                 <!-- here -->
 
                 <div class="experience-details-container border-indigo-600  border-solid rounded-3xl p-6 pb-12">
@@ -94,15 +94,25 @@ import { IconCertified } from '@/components/icons/index2';
                 </div>
 
             </div>
+            
         </section>
 
-
-
     </div>
-
+    
 </template>
 
 <style>
+.arrow-down-posi {
+    position: absolute;
+}
+
+.arrow-down-about {
+  position: sticky;
+  bottom: -10px;
+  right: 20px;
+  animation: moveArrow 3s ease-in-out infinite;
+  /* rotate: 180deg; */
+}
 
 /* Define keyframes for infinite rotation */
 @keyframes rotate-infinite {
