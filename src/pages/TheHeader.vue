@@ -178,7 +178,7 @@ export default {
 <style>
 @media screen and (max-width: 431px) {
   .hamburger-div ul li a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
   }
 
