@@ -1,7 +1,7 @@
 
 <template>
     <div id="certification">
-        <!-- <div>
+        <div>
             <p class=" takea-look text-center mb-4">Take a Look At My</p>
             <p class=" certification-title text-white text-center font-semibold text-5xl pb-16">Certifications</p>
         </div>
@@ -23,7 +23,8 @@
             </div>
      
 
-        </div> -->
+        </div>
+        <div class="hr mb-8 mt-8"></div>
     </div>
 </template>
 
@@ -82,6 +83,7 @@
 
     .certification-container{
         height: auto;
+        padding-top: 4rem;
     }
 }
 

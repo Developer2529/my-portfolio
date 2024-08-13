@@ -58,9 +58,10 @@ const profileInfo = ref<profileDataType>({
   </div>
   <!-- <a onclick="location.href='#about'" class="flex justify-end arrow-down pr-4"><icon-arrowdown></icon-arrowdown></a> -->
  <about-me></about-me>
- <my-certifications></my-certifications>
+
  <experience-page></experience-page>
  <my-projects></my-projects>
+ <my-certifications></my-certifications>
  <my-contact></my-contact>
 
 </template>

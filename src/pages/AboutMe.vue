@@ -63,6 +63,7 @@ import { IconEducation, IconQuality, IconArrowdown, IconArrowup } from "../compo
 
 
 
+
 @keyframes moveArrow {
   0%, 100% {
     transform: translateY(0);

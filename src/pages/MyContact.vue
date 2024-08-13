@@ -19,11 +19,11 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
                 <p class=" projects-title together text-white  font-semibold text-8xl  ">TOGETHER</p>
             </div>
         </div>
-        <div class="hr"></div>
+        <div class="horizontal-line"></div>
         <div class=" contact-info-div flex flex-row gap-56 justify-evenly py-8">
             <div class="flex flex-row items-center">
                 <img class="contact-icon" src="../assets/img/telephone_icon.svg" alt="">
-                <a class="text-white" href="tel:123-456-7890">829-670-6437</a>
+                <a class="text-white" href="829-670-6437">829-670-6437</a>
             </div>
             <div class="flex flex-row items-center">
                 <img class="contact-icon" src="../assets/img/email_icon.svg" alt="">
@@ -40,11 +40,12 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
         <div class="flex flex-row gap-8 justify-center text-white mb-8">
             <ul class="footer-links flex flex-row gap-8 justify-center items-center">
                 <li><a href="#about">About</a></li>
-                <li><a href="#certification">Certification</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#home"><img class="contact-icon" src="../assets/img/home_building_property_icon.svg"
                             alt=""></a></li>
-                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Project</a></li>
+                <li><a href="#certification">Certification</a></li>
+
             </ul>
         </div>
         <footer>
@@ -54,13 +55,7 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
 </template>
 
 <style>
-.hr {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border-color: #ff3300;
-    border-style: solid;
-    border-width: 0.2px;
-}
+
 
 
 
@@ -93,6 +88,13 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
     transform: scale(1.1);
 }
 
+.horizontal-line {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    border-color: #eeff00bc;
+    border-style: solid;
+    border-width: 0.2px;
+}
 
 /* media queries */
 @media screen and (max-width: 768px) {
@@ -156,6 +158,14 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
     .footer-links li a {
         font-size: 0.9rem;
     }
+
+    .hr {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-color: #ff3300;
+    border-style: solid;
+    border-width: 0.2px;
+}
 
     .hr{
         margin-top: 2rem;
