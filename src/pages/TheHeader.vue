@@ -182,12 +182,11 @@ export default {
 
   }
 
-  .hamburger-div ul li {
-    margin-bottom: 1rem;
-
-  }
 
 }
 
-
+.hamburger-list-div {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
 </style>

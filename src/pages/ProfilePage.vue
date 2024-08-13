@@ -33,7 +33,7 @@ const profileInfo = ref<profileDataType>({
 <template>
   <div  class="profile-main-div flex justify-center text-center gap-16">
     <div class="profile-img-div flex justify-center mt-40">
-      <img class="profile-img w-80 h-80 " :src="profileInfo.profilePic" alt="profilePic">
+      <img class="profile-img w-52 h-60 " :src="profileInfo.profilePic" alt="profilePic">
     </div>
     <div class="profile-info-div">
       <p class="greeting-parag  profile-name text-slate-400">{{ profileInfo.profileGreeting }}</p>
@@ -83,7 +83,8 @@ const profileInfo = ref<profileDataType>({
 }
 
 .profile-img {
-border-radius: 50%;
+  border-radius: 15%;
+
 
   
 }
@@ -99,6 +100,7 @@ border-radius: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* margin-top: 4rem; */
  
   }
 
@@ -111,16 +113,14 @@ border-radius: 50%;
     padding-top: 0;
   }
 
-  .hamburger-list-div{
-    padding-top: 0.5rem;
-    padding-bottom: 0rem;
-  }
 
 }
 
 @media screen and (min-width: 768px) {
   #user-dropdown ul {
     display: none;
+
   }
+
 }
 </style>
