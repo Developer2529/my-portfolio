@@ -90,7 +90,7 @@ const profileInfo = ref<profileDataType>({
 }
 .profile-info-div {
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding-top: 4rem;
 }
 
