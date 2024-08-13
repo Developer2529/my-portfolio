@@ -2,7 +2,7 @@
 // import IconArrowdown from '@/components/icons/IconArrowdown.vue';
 </script>
 <template>
-    <div id="projects" class="mb-40">
+    <div id="projects" class=" projects-main-div mb-40">
         <p class="browse-projects text-center mt-16 mb-4">Browse My Recent</p>
         <p class=" projects-title text-white text-center font-semibold text-5xl mb-8">Projects</p>
         <div class=" projects-div flex justify-center flex-row gap-8">
@@ -69,6 +69,7 @@
                 </div>
             </div>
         </div>
+        <div class="hr mb-8"></div>
     </div>
 </template>
 

@@ -6,6 +6,7 @@ interface NavBarText {
   fullName: string;
   home: string;
   about: string;
+  certification: string;
   experience: string;
   projects: string;
   contact: string;
@@ -24,8 +25,9 @@ export default {
       fullName: "${R1ch@rd S@nch3z}",
       home: "Home",
       about: "About",
+      certification: "Certification",
       experience: "Experience",
-      projects: "Projects",
+      projects: "Project",
       contact: "Contact",
     });
 
@@ -74,7 +76,7 @@ export default {
   <div id="home" @click="handleOutsideClick">
     <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
       <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="logo font-semibold  self-center  text-xl whitespace-nowrap dark:text-white">{{
+        <div class="logo profile-name self-center  text-xl whitespace-nowrap dark:text-white">{{
           navBartext.fullName.toUpperCase() }}</div>
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button data-collapse-toggle="navbar-user" type="button"
@@ -89,16 +91,22 @@ export default {
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
           <ul
             class="nav-links flex flex-col font-light p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
+            <!-- <li>
               <a href="#home" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:p-0"
                 aria-current="page">
                 {{ navBartext.home }}
               </a>
-            </li>
+            </li> -->
             <li>
               <a href="#about"
                 class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                 {{ navBartext.about }}
+              </a>
+            </li>
+            <li>
+              <a href="#certification"
+                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                {{ navBartext.certification }}
               </a>
             </li>
             <li>
@@ -132,6 +140,12 @@ export default {
           <a href="#about"
             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
             {{ navBartext.about }}
+          </a>
+        </li>
+        <li>
+          <a href="#certification"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+            {{ navBartext.certification }}
           </a>
         </li>
         <li>

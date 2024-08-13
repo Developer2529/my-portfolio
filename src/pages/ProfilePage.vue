@@ -8,6 +8,8 @@ import MyProjects from './MyProjects.vue';
 import MyContact from './MyContact.vue';
 import ExperiencePage from './ExperiencePage.vue';
 import DownloBtn from '@/components/icons/DownloBtn.vue';
+import MyCertifications from './MyCertifications.vue';
+
 
 interface profileDataType {
   profilePic: any; 
@@ -34,9 +36,9 @@ const profileInfo = ref<profileDataType>({
       <img class="profile-img w-80 h-80 " :src="profileInfo.profilePic" alt="profilePic">
     </div>
     <div class="profile-info-div">
-      <p class="greeting-parag  text-slate-400">{{ profileInfo.profileGreeting }}</p>
-      <p class="my-name text-white font-medium text-3xl pt-2 pb-2 ">{{ profileInfo.fullName }}</p>
-      <p class="type-dev-parag text-xl text-slate-400 pb-2">{{ profileInfo.typeOfDeveloper[0] }}</p>
+      <p class="greeting-parag  profile-name text-slate-400">{{ profileInfo.profileGreeting }}</p>
+      <p class="my-name profile-name text-white font-medium text-3xl pt-2 pb-2 ">{{ profileInfo.fullName }}</p>
+      <p class="type-dev-parag profile-name text-xl text-slate-400 pb-2">{{ profileInfo.typeOfDeveloper[0] }}</p>
       <div class=" gap-2 mt-2 mb-2" >
 
         
@@ -52,13 +54,15 @@ const profileInfo = ref<profileDataType>({
         <a class="social-icon" href="https://www.linkedin.com/in/richar-starling-sanchez-francis-b11502213" target="_blank"><icon-linkedin></icon-linkedin></a>
       </div>
     </div>
-   
+    <div class="hr"></div>
   </div>
   <!-- <a onclick="location.href='#about'" class="flex justify-end arrow-down pr-4"><icon-arrowdown></icon-arrowdown></a> -->
  <about-me></about-me>
+ <my-certifications></my-certifications>
  <experience-page></experience-page>
  <my-projects></my-projects>
  <my-contact></my-contact>
+
 </template>
 
 <style>
