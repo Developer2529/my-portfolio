@@ -23,7 +23,7 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
         <div class=" contact-info-div flex flex-row gap-56 justify-evenly py-8">
             <div class="flex flex-row items-center">
                 <img class="contact-icon" src="../assets/img/telephone_icon.svg" alt="">
-                <a class="text-white" href="829-670-6437">829-670-6437</a>
+                <a class="text-white" href="tel:+1829-670-6437">829-670-6437</a>
             </div>
             <div class="flex flex-row items-center">
                 <img class="contact-icon" src="../assets/img/email_icon.svg" alt="">
@@ -34,141 +34,24 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
             <div class="flex flex-row items-center  ">
                 <img class="contact-icon" src="../assets/img/website_world wide web_internet_globe_network_icon.svg"
                     alt="">
-                <p class="text-white">www.richar.net</p>
+                <p class="text-white">www.richard.net</p>
             </div>
         </div>
-        <div class="flex flex-row gap-8 justify-center text-white mb-8">
-            <ul class="footer-links flex flex-row gap-8 justify-center items-center">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#home"><img class="contact-icon" src="../assets/img/home_building_property_icon.svg"
-                            alt=""></a></li>
-                <li><a href="#projects">Project</a></li>
-                <li><a href="#certification">Certification</a></li>
-
-            </ul>
+        <div class="footer-main-div">
+            <div class="flex flex-row gap-8 justify-center text-white ">
+                <ul class="footer-links flex flex-row gap-8 justify-center items-center ">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#certification">Certification</a></li>
+                </ul>
+            </div>
+            <footer>
+                <p class=" copy-right text-center  text-slate-400">Copyright &copy; 2024 Richard Sanchez. All Rights
+                    Reserved</p>
+            </footer>
         </div>
-        <footer>
-            <p class=" copy-right text-center  text-slate-400">Copyright &copy; 2024 Richard Sanchez. All Rights Reserved</p>
-        </footer>
     </div>
 </template>
 
-<style>
-
-
-
-
-.contact-title,
-.about-title,
-.experience-title,
-.projects-title,
-.lets-work-title,
-.profile-name {
-    font-family: "Quicksand", sans-serif;
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.footer-links li a:hover {
-    color: gray;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: #ff3300;
-}
-
-.footer-links li {
-    transition: transform 0.3s ease-in-out;
-}
-
-.footer-links li:hover {
-    transform: scale(1.1);
-}
-
-.horizontal-line {
-    margin-left: 6rem;
-    margin-right: 6rem;
-    border-color: #eeff00bc;
-    border-style: solid;
-    border-width: 0.2px;
-}
-
-/* media queries */
-@media screen and (max-width: 768px) {
-
-    .pic-together-div {
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contact-title {
-        margin-bottom: 2rem;
-    }
-
-
-}
-
-@media screen and (max-width: 598px) {
-
-    .lets-work-title {
-        font-size: 1.4rem;
-        text-align: center;
-    }
-
-    .together {
-        font-size: 2rem;
-
-    }
-
-    .projects-main-div {
-        margin-bottom: 0rem;
-    }
-
-    .pic-together-div {
-        padding-bottom: 2rem;
-    }
-
-    .contact-info-div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0rem;
-    }
-
-    #contact{
-        margin-bottom: 2rem;
-    }
-
-    .footer-links{
-        margin: 4rem 0 4rem 0;
-        display: flex;
-        gap: 1rem;
-    }
-
-    .copy-right{
-        font-size: 0.8rem;
-        margin-bottom: 2rem;
-    }
-
-    .footer-links li a {
-        font-size: 0.9rem;
-    }
-
-    .hr {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border-color: #ff3300;
-    border-style: solid;
-    border-width: 0.2px;
-}
-
-    .hr{
-        margin-top: 2rem;
-    }
-}
-</style>
