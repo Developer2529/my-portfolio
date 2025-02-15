@@ -2,15 +2,8 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import type { Ref } from 'vue';
 
-
 interface NavBarText {
-  fullName: string;
-  home: string;
-  about: string;
-  certification: string;
-  experience: string;
-  projects: string;
-  contact: string;
+  slogan: string;
 }
 
 interface MenuListProps {
@@ -23,14 +16,16 @@ interface MenuListProps {
 export default {
   setup() {
     const navBartext: Ref<NavBarText> = ref<NavBarText>({
-      fullName: "${R1ch@rd S@nch3z}",
-      home: "Home",
-      about: "About",
-      certification: "Certification",
-      experience: "Experience",
-      projects: "Project",
-      contact: "Contact",
+      slogan: "Crafting Beautiful & Functional Websites",
     });
+
+    const navLinks = ref([
+      { label: "About", href: "#about" },
+      { label: "Experience", href: "#experience" },
+      { label: "Projects", href: "#projects" },
+      { label: "Certification", href: "#certification" },
+      { label: "Contact", href: "#contact" },
+    ]);
 
     const hamburgerDiv: Ref<boolean> = ref(false);
     const menuListProps: Ref<MenuListProps> = ref<MenuListProps>({
@@ -45,7 +40,7 @@ export default {
     };
 
     const handleOutsideClick = (event: MouseEvent): void => {
-      if ((event.target as HTMLElement).closest('.hamburger-bg') === null) {
+      if (!(event.target as HTMLElement).closest('.hamburger-div, .hamburger-bg')) {
         hamburgerDiv.value = false;
       }
     };
@@ -64,6 +59,7 @@ export default {
 
     return {
       navBartext,
+      navLinks,
       showMenuOptBtn,
       handleOutsideClick,
       hamburgerDiv,
@@ -74,11 +70,11 @@ export default {
 </script>
 
 <template>
-  <div id="home" @click="handleOutsideClick">
+  <div id="home" @click="handleOutsideClick" lass="main-div-vh">
     <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
-      <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div class="logo profile-name self-center  text-xl whitespace-nowrap dark:text-white">{{
-          navBartext.fullName.toUpperCase() }}</div>
+      <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <div class="logo profile-name self-center text-lg whitespace-nowrap dark:text-white">{{
+          navBartext.slogan }}</div>
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button data-collapse-toggle="navbar-user" type="button"
             class="hamburger-bg inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -92,34 +88,10 @@ export default {
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
           <ul
             class="nav-links flex flex-col font-light p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a href="#about"
+            <li v-for="link in navLinks" :key="link.href" >
+              <a :href="link.href"
                 class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                {{ navBartext.about }}
-              </a>
-            </li>
-            <li>
-              <a href="#experience"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                {{ navBartext.experience }}
-              </a>
-            </li>
-            <li>
-              <a href="#projects"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                {{ navBartext.projects }}
-              </a>
-            </li>
-            <li>
-              <a href="#certification"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                {{ navBartext.certification }}
-              </a>
-            </li>
-            <li>
-              <a href="#contact"
-                class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-                {{ navBartext.contact }}
+                {{ link.label }}
               </a>
             </li>
           </ul>
@@ -131,34 +103,10 @@ export default {
       class="hamburger-div   z-50 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
       id="user-dropdown" :style="{ backgroundColor: menuListProps.divBg, width: menuListProps.width }">
       <ul class="py-2 hamburger-list-div bg-indigo-950" aria-labelledby="user-menu-button">
-        <li>
-          <a href="#about"
+        <li v-for="link in navLinks" :key="link.href">
+          <a :href="link.href"
             class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-            {{ navBartext.about }}
-          </a>
-        </li>
-        <li>
-          <a href="#experience"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-            {{ navBartext.experience }}
-          </a>
-        </li>
-        <li>
-          <a href="#projects"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-            {{ navBartext.projects }}
-          </a>
-        </li>
-        <li>
-          <a href="#certification"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-            {{ navBartext.certification }}
-          </a>
-        </li>
-        <li>
-          <a href="#contact"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
-            {{ navBartext.contact }}
+            {{link.label }}
           </a>
         </li>
       </ul>
@@ -169,4 +117,4 @@ export default {
     <router-view></router-view>
   </div>
 </template>
-
+ 

@@ -9,14 +9,13 @@ import ExperiencePage from './ExperiencePage.vue';
 import DownloBtn from '@/components/icons/DownloBtn.vue';
 import MyCertifications from './MyCertifications.vue';
 
-
 interface profileDataType {
   profilePic: any;
-  profileGreeting: String;
-  fullName: String;
-  typeOfDeveloper: [String, String];
-  cvBtn: String;
-  contactInfoBtn: String;
+  profileGreeting: string;
+  fullName: string;
+  typeOfDeveloper: [string, string];
+  cvBtn: string;
+  contactInfoBtn: string;
 }
 
 const profileInfo = ref<profileDataType>({
@@ -30,48 +29,82 @@ const profileInfo = ref<profileDataType>({
 </script>
 
 <template>
-  <div class="profile-main-div flex justify-center text-center gap-16">
+  <div class="profile-main-div flex justify-center text-center gap-16   main-div-vh">
+
     <div class="profile-img-div flex justify-center mt-40">
-      <img class="profile-img w-52 h-60 " :src="profileInfo.profilePic" alt="profilePic">
+      <img class="profile-img w-52 h-60" :src="profileInfo.profilePic" alt="profilePic">
     </div>
+
     <div class="profile-info-div">
-      <p class="greeting-parag  profile-name text-slate-400">{{ profileInfo.profileGreeting }}</p>
-      <p class="my-name profile-name text-white font-medium text-3xl pt-2 pb-2 ">{{ profileInfo.fullName }}</p>
-      <p class="type-dev-parag profile-name text-xl text-slate-400 pb-2">{{ profileInfo.typeOfDeveloper[0] }}</p>
-      <div class=" gap-2 mt-2 mb-2">
+      <p class="greeting-parag profile-name text-slate-400">{{ profileInfo.profileGreeting }}</p>
+      <p class="my-name profile-name text-white font-medium text-3xl pt-2 pb-2">{{ profileInfo.fullName }}</p>
+      <p class="type-dev-parag profile-name text-xl text-slate-400 pb-4">{{ profileInfo.typeOfDeveloper[0] }}</p>
+
+      <button type="button"
+        class="contact-info-btn py-2.5 px-5 me-2 mb-2 mr-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        <DownloBtn url="/src/assets/img/lionCoding.png"></DownloBtn>
+      </button>
+
+      <a href="#contact"><button type="button"
+          class=" contact-info-btn py-2.5 px-5 me-2 mb-2 ml-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white ">{{
+            profileInfo.contactInfoBtn }}</button></a>
 
 
-        <button type="button"
-          class="contact-info-btn py-2.5 px-5 me-2 mb-2 mr-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
-          <DownloBtn url="/src/assets/img/lionCoding.png"></DownloBtn>
-        </button>
-
-        <a href="#contact"><button type="button"
-            class=" contact-info-btn py-2.5 px-5 me-2 mb-2 ml-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-white focus:z-10 focus:ring-4 focus:ring-indigo-700 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white ">{{
-              profileInfo.contactInfoBtn }}</button></a>
-      </div>
-      <div class="social-media-div flex gap-4 flex-row justify-center">
-        <a class="social-icon" href="https://github.com/Developer2529" target="_blank"><icon-github></icon-github></a>
+      <div class="social-media-div flex gap-4 flex-row justify-center pt-2">
+        <a class="social-icon" href="https://github.com/Developer2529" target="_blank">
+          <IconGithub />
+        </a>
         <a class="social-icon" href="https://www.linkedin.com/in/richar-starling-sanchez-francis-b11502213"
-          target="_blank"><icon-linkedin></icon-linkedin></a>
+          target="_blank">
+          <IconLinkedin />
+        </a>
       </div>
     </div>
+
+
+
     <div class="hr"></div>
+
   </div>
-  <!-- <a onclick="location.href='#about'" class="flex justify-end arrow-down pr-4"><icon-arrowdown></icon-arrowdown></a> -->
-  <about-me></about-me>
+  <div class="hr arrow-container">
+    <a href="#about" class="arrow-down">
+      <IconArrowdown />
+    </a>
+  </div>
 
-  <experience-page></experience-page>
-  <my-projects></my-projects>
-  <my-certifications></my-certifications>
-  <my-contact></my-contact>
 
+
+  <AboutMe />
+  <ExperiencePage />
+  <MyProjects />
+  <MyCertifications />
+  <MyContact />
 </template>
 
 <style>
+.arrow-container {
+  position: absolute;
+  bottom: 20px;
+  /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
 .contact-info-btn,
 .social-icon {
   transition: transform 0.3s ease-in-out;
+}
+
+.contact-info-btn {
+  background-color: white;
 }
 
 .social-icon:hover {
@@ -93,7 +126,7 @@ const profileInfo = ref<profileDataType>({
   padding-top: 4rem;
 }
 
-/* media queries */
+/* Media Queries */
 @media screen and (max-width: 598px) {
   .profile-main-div {
     display: flex;
