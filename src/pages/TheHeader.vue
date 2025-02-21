@@ -73,7 +73,7 @@ export default {
   <div id="home" @click="handleOutsideClick" lass="main-div-vh">
     <nav class="bg-navBar desktop-nav border-gray-200 dark:bg-gray-900">
       <div class="nav-first-div font-light max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <div class="logo profile-name self-center text-lg whitespace-nowrap dark:text-white">{{
+        <div class="logo profile-name self-center text-base  whitespace-nowrap dark:text-white">{{
           navBartext.slogan }}</div>
         <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button data-collapse-toggle="navbar-user" type="button"

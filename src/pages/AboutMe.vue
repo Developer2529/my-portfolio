@@ -40,15 +40,13 @@ import { IconQuality, IconArrowdown } from "../components/icons/index2";
 
           <div class="column third">
             <p class="text-justify font-title-col">
-              I am a dedicated Software Developer with 1 year of hands-on experience in Frontend Development. My
-              expertise includes HTML and CSS, where I have gained substantial experience in creating responsive and
-              user-friendly web interfaces. I also have intermediate proficiency in JavaScript, allowing me to develop
-              interactive and dynamic web applications. Additionally, I am expanding my knowledge with basic skills in
-              TypeScript, Vue JS, and UX/UI design, ensuring that I stay current with modern development practices. On
-              the backend, I am familiar with Git for version control and have intermediate experience with SQL Server
-              for managing and querying databases. I am currently pursuing my degree in Software Development at UAPA
-              University, with plans to graduate in less than 2 years, which has provided me with a solid foundation to
-              continue growing in this field.
+                            I'm a Software Developer with 1 year of experience in Frontend
+              Development. I specialize in Javascript, HTML and CSS, creating
+              responsive and user-friendly interfaces,  dynamic web applications. I'm also
+              expanding my expertise in TypeScript, Vue.js, and UX/UI design. On the
+              backend, I use Git for version control and have intermediate experience
+              with SQL Server. Currently, I'm pursuing a Software Development degree
+              at UAPA University, set to graduate in less than two years.
             </p>
             <div class="hr"></div>
           </div>

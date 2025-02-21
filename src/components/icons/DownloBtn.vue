@@ -9,7 +9,7 @@ const props = defineProps < {
     nombreArchivo?: string; 
 }>()
 
-const defaultFileName = "archivo-descargado"; 
+const defaultFileName = "RICHARD SANCHEZ CV"; 
 const nombreArchivo = props.nombreArchivo || defaultFileName
 </script>
 
