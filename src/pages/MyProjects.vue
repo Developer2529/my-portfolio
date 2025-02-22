@@ -16,12 +16,19 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
 
                         <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Password Gen
                         </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                        <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
+                                onclick="window.open('https://github.com', '_blank')">
+                                GitHub
+                            </button>
+                            <button type="button" class="projects-btn"
+                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                Live Demo
+                            </button>
                         </div>
+
+
+
 
 
                     </div>
@@ -54,7 +61,8 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
                             <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Office Location
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Office
+                            Location
                         </h2>
                         <div class=" flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
@@ -73,7 +81,8 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
                             <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Pensum Online
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Pensum
+                            Online
                         </h2>
                         <div class=" flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
@@ -92,7 +101,8 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
                             <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Help Desk Center
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Help Desk
+                            Center
                         </h2>
                         <div class=" flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
@@ -127,7 +137,7 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
             </div>
             <div class="arrow-container">
                 <a href="#certification" class="arrow-down">
-                    <IconArrowdown />
+                    <!-- <IconArrowdown /> -->
                 </a>
             </div>
         </div>

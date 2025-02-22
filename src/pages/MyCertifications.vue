@@ -24,7 +24,7 @@ import IconArrowdown from '@/components/icons/IconArrowdown.vue';
 
     <div class="hr arrow-container">
         <a href="#contact" class="arrow-down">
-            <IconArrowdown />
+            <!-- <IconArrowdown /> -->
         </a>
     </div>
     <div class="hr"></div>

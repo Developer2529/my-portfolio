@@ -43,7 +43,7 @@ const backendSkills = [
                                     <IconCertified class="certified-icon" />
                                     <div class="flex flex-col">
                                         <h3 class="text-white">{{ skill.name }}</h3>
-                                        <p class="text-white">{{ skill.level }}</p>
+                                        <!-- <p class="text-white">{{ skill.level }}</p> -->
                                     </div>
                                 </article>
                             </div>
@@ -63,7 +63,7 @@ const backendSkills = [
                                     <IconCertified />
                                     <div class="flex flex-col">
                                         <h3 class="text-white">{{ skill.name }}</h3>
-                                        <p class="text-white">{{ skill.level }}</p>
+                                        <!-- <p class="text-white">{{ skill.level }}</p> -->
                                     </div>
                                 </article>
                             </div>
@@ -75,7 +75,7 @@ const backendSkills = [
 
         <div class="hr arrow-container">
             <a href="#projects" class="arrow-down">
-                <IconArrowdown />
+                <!-- <IconArrowdown /> -->
             </a>
         </div>
         <div class="hr"></div>

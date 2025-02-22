@@ -68,7 +68,7 @@ const profileInfo = ref<profileDataType>({
   </div>
   <div class="hr arrow-container">
     <a href="#about" class="arrow-down">
-      <IconArrowdown />
+      <!-- <IconArrowdown /> -->
     </a>
   </div>
 

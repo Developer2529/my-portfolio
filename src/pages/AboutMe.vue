@@ -32,9 +32,9 @@ import { IconQuality, IconArrowdown } from "../components/icons/index2";
               <div class="flex flex-row justify-center pt-4 pb-2">
                 <IconQuality />
               </div>
-              <p class="font-semibold about-title text-slate-300 text-xl">Experience</p>
-              <p class="font-title-col">1 year</p>
-              <p class="font-title-col">Frontend Development</p>
+              <p class="font-semibold about-title text-slate-300 text-xl">Education</p>
+              <p class="font-title-col">In the process of</p>
+              <p class="font-title-col">Software Engineering Degree</p>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ import { IconQuality, IconArrowdown } from "../components/icons/index2";
 
     <div class="hr arrow-container">
       <a href="#experience" class="arrow-down">
-        <IconArrowdown />
+        <!-- <IconArrowdown /> -->
       </a>
     </div>
   </div>
