@@ -200,7 +200,7 @@
 
 .projects-each-div {
 
-    background-color: rgb(250, 32, 12); 
+    background-color: rgb(228, 45, 29); 
     width: 200px;
     height: 210px;
     margin: 2rem;
