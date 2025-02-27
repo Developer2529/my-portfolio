@@ -10,7 +10,9 @@
                     <div class="projects-detail-container color-container ">
                         <div class=" flex justify-center flex-col article-container-projects">
 
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
+                            <div class="w-72 projects-each-div flex justify-center">
+                                <img class="w-28" src="../assets/img/passkey.svg" alt="">
+                            </div>
                         </div>
 
                         <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Password Gen
@@ -32,103 +34,114 @@
 
                     </div>
                 </div>
-
                 <div class="projects-details-container border-indigo-600  m">
                     <div class="projects-detail-container color-container ">
                         <div class=" flex justify-center flex-col article-container-projects">
 
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
+                            <div class="w-72 projects-each-div flex justify-center">
+                                <img class="w-28" src="../assets/img/white_phone book_directory_phone_book_icon.svg" alt="">
+                            </div>
                         </div>
 
                         <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Phone Book
                         </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                        <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
+                                onclick="window.open('https://github.com', '_blank')">
+                                GitHub
+                            </button>
+                            <button type="button" class="projects-btn"
+                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                Live Demo
+                            </button>
                         </div>
+
+
+
 
 
                     </div>
                 </div>
-
-                <div class="projects-details-container border-indigo-600  ">
+                <div class="projects-details-container border-indigo-600  m">
                     <div class="projects-detail-container color-container ">
                         <div class=" flex justify-center flex-col article-container-projects">
 
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
+                            <div class="w-72 projects-each-div flex justify-center">
+                                <img class="w-28" src="../assets/img/location_on.svg" alt="">
+                            </div>
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Office
-                            Location
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Office Map
                         </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                        <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
+                                onclick="window.open('https://github.com', '_blank')">
+                                GitHub
+                            </button>
+                            <button type="button" class="projects-btn"
+                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                Live Demo
+                            </button>
                         </div>
+
+
+
 
 
                     </div>
                 </div>
-                <div class="projects-details-container border-indigo-600  ">
+                <div class="projects-details-container border-indigo-600  m">
                     <div class="projects-detail-container color-container ">
                         <div class=" flex justify-center flex-col article-container-projects">
 
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
+                            <div class="w-72 projects-each-div flex justify-center">
+                                <img class="w-28" src="../assets/img/helpdesk_center.svg" alt="">
+                            </div>
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Pensum
-                            Online
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">HD Center
                         </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                        <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
+                                onclick="window.open('https://github.com', '_blank')">
+                                GitHub
+                            </button>
+                            <button type="button" class="projects-btn"
+                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                Live Demo
+                            </button>
                         </div>
+
+
+
 
 
                     </div>
                 </div>
-                <div class="projects-details-container border-indigo-600  ">
+                <div class="projects-details-container border-indigo-600  m">
                     <div class="projects-detail-container color-container ">
                         <div class=" flex justify-center flex-col article-container-projects">
 
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
+                            <div class="w-72 projects-each-div flex justify-center">
+                                <img class="w-28" src="../assets/img/pensum_school.svg" alt="">
+                            </div>
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Help Desk
-                            Center
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">PAOPAU
                         </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                        <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="projects-details-container border-indigo-600  ">
-                    <div class="projects-detail-container color-container ">
-                        <div class=" flex justify-center flex-col article-container-projects">
-
-                            <img src="../assets/img/projectImg.png" alt="Project 1" class="project-img">
-                        </div>
-
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Project
-                            Three
-                        </h2>
-                        <div class=" flex gap-4 justify-center text-center btn-container mb-4">
+                                onclick="window.open('https://github.com', '_blank')">
+                                GitHub
+                            </button>
                             <button type="button" class="projects-btn"
-                                onclick="window.location.href='https://github.com'">GitHub</button>
-                            <button type="button" class="projects-btn" onclick="window.location.href='#'">Live
-                                Demo</button>
+                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                Live Demo
+                            </button>
                         </div>
+
+
+
 
 
                     </div>
@@ -180,8 +193,19 @@
 }
 
 .projects-btn:hover {
-    background-color: #fa200c;
+    background-color: rgb(250, 32, 12);
     transform: scale(1.1);
     color: white;
 }
+
+.projects-each-div {
+
+    background-color: rgb(250, 32, 12); 
+    width: 200px;
+    height: 210px;
+    margin: 2rem;
+    border-radius: 2rem;
+} 
+
 </style>
+
