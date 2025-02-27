@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import IconArrowup from '@/components/icons/IconArrowup.vue';
 
 const sendMail = () => {
     console.log("Enviando correo..."); 

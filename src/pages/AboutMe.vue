@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconQuality, IconArrowdown } from "../components/icons/index2";
+import { IconQuality } from "../components/icons/index2";
 </script>
 
 <template>

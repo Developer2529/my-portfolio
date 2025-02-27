@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconCertified, IconArrowdown } from '@/components/icons/index2';
+
 
 // const frontendSkills = [
 //     { name: "HTML", level: "Experienced" },

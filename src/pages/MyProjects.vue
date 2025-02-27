@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import IconArrowdown from '@/components/icons/IconArrowdown.vue';
 </script>
 <template>
     <div class="main-div-vh">
