@@ -15,7 +15,7 @@
                             </div>
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Password Gen
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">JS PWG
                         </h2>
                         <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
@@ -43,7 +43,7 @@
                             </div>
                         </div>
 
-                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Phone Book
+                        <h2 class=" text-center text-3xl pb-6 text-white experience-subtitle project-title">Vue PWG
                         </h2>
                         <div class="flex gap-4 justify-center text-center btn-container mb-4">
                             <button type="button" class="projects-btn"
@@ -51,7 +51,7 @@
                                 GitHub
                             </button>
                             <button type="button" class="projects-btn"
-                                onclick="window.open('https://password-generator-cqiufczdo-developer2529s-projects.vercel.app/', '_blank')">
+                                onclick="window.open('https://password-genarator-in-vue-js.vercel.app/', '_blank')">
                                 Live Demo
                             </button>
                         </div>
