@@ -1,7 +1,15 @@
 <script setup lang="ts">
+import { onMounted } from 'vue';
+import AOS from 'aos';
+onMounted(() => {
+  AOS.init({
+    duration: 2000, // duración de la animación
+     once: false,     // solo se activa una vez
+  });
+});
 </script>
 <template>
-    <div class="main-div-vh">
+    <div  :data-aos="'fade-down'"  class="main-div-vh">
         <div id="projects" class=" projects-main-div mb-40 ">
             <p class="browse-projects text-center mt-16 mb-4">Browse My Recent</p>
             <p class=" projects-title text-white text-center font-semibold text-5xl mb-8">Projects</p>

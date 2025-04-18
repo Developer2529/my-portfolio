@@ -1,9 +1,16 @@
 <script setup lang="ts">
-
+import { onMounted } from 'vue';
+import AOS from 'aos';
+onMounted(() => {
+  AOS.init({
+    duration: 2000, // duración de la animación
+     once: false,     // solo se activa una vez
+  });
+});
 </script>
 
 <template>
-    <div id="certification" class="main-div-vh ">
+    <div :data-aos="'fade-up'"  id="certification" class="main-div-vh ">
         <div>
             <p class="takea-look text-center mb-4">Take a Look At My</p>
             <p class="certification-title text-white text-center font-semibold text-5xl pb-16">Certifications</p>

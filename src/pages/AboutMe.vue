@@ -1,9 +1,18 @@
 <script setup lang="ts">
 import { IconQuality } from "../components/icons/index2";
+import { onMounted } from "vue";
+import AOS from 'aos';
+onMounted(() => {
+  AOS.init({
+    duration: 2000, // duración de la animación
+     once: false,     // solo se activa una vez
+  });
+});
+
 </script>
 
 <template>
-  <div class="aboutme main-div-vh" >
+  <div :data-aos="'fade-left'" class=" aboutme main-div-vh" >
     <div class="get-to-knowme flex flex-col items-center ">
       <p id="about" class="mb-4">Get to know more</p>
       <p class="about-title text-white font-semibold text-5xl">About Me</p>

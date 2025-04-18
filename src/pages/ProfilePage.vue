@@ -9,6 +9,15 @@ import ExperiencePage from './ExperiencePage.vue';
 import DownloBtn from '@/components/icons/DownloBtn.vue';
 import MyCertifications from './MyCertifications.vue';
 
+import { onMounted } from "vue";
+import AOS from 'aos';
+onMounted(() => {
+  AOS.init({
+    duration: 2000, // duración de la animación
+     once: false,     // solo se activa una vez
+  });
+});
+
 interface profileDataType {
   profilePic: any;
   profileGreeting: string;
@@ -29,7 +38,7 @@ const profileInfo = ref<profileDataType>({
 </script>
 
 <template>
-  <div class="profile-main-div flex justify-center text-center gap-16   main-div-vh">
+  <div :data-aos="'fade-up'" class="profile-main-div flex justify-center text-center gap-16   main-div-vh">
 
     <div class="profile-img-div flex justify-center mt-40">
       <img class="profile-img w-52 h-60" :src="profileInfo.profilePic" alt="profilePic">

@@ -6,6 +6,10 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+// importing AOS css style globally
+import 'aos/dist/aos.css'
+import AOS from 'aos';
+
 const app = createApp(App)
 
 app.use(createPinia())

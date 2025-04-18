@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { IconCertified } from '@/components/icons/index2';
+import { onMounted } from 'vue';
 
 // const frontendSkills = [
 //     { name: "HTML", level: "Experienced" },
@@ -9,6 +10,15 @@ import { IconCertified } from '@/components/icons/index2';
 //     { name: "Vue JS", level: "Basic" },
 //     { name: "Tailwind", level: "Basic" }
 // ];
+
+import AOS from 'aos';
+onMounted(() => {
+  AOS.init({
+    duration: 2000, // duración de la animación
+     once: false,     // solo se activa una vez
+  });
+});
+
 const frontendSkills = [
     { name: "HTML", level: "" },
     { name: "CSS", level: "" },
@@ -27,7 +37,7 @@ const backendSkills = [
 
 <template>
     <div>
-        <section id="experience" class="main-div-vh">
+        <section :data-aos="'fade-left'" id="experience" class="main-div-vh">
             <p class="section-text-1 text-center explore-experience">Explore My</p>
             <h1 class="title experience-title text-center text-white font-semibold text-5xl pb-8">Experience</h1>
             <div class="backend-frontend-div flex flex-row justify-center gap-8">
